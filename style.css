@@ -1,0 +1,325 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+:root {
+  --dd-highlight: #bd5fff;
+  --dd-text: #e6e6e6;
+  --dd-background: #16161a;
+  --dd-card-background: #16161a;
+  --dd-highlight-text: #c3d2e6;
+  --dd-icon: #bd5fff;
+  --dd-icon-background: #fffffe;
+  --dd-browser-color: #36383a;
+  --dd-browser-dark-color: #232425;
+  --dd-card-shadow: 0 4px 8px 0 #000, 0 6px 20px 0 #000;
+  --dd-link: #08fdd8;
+  --dd-box-shadow-dark: #0c0c0e;
+  --dd-box-shadow-light: #24242b;
+  --dd-tag: #515152;
+}
+main {
+  background-color: var(--dd-background);
+  color: var(--dd-text);
+}
+.my-container {
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.mx-0 {
+  margin-left: 0 !important;
+  margin-right: 0 !important;
+}
+.margin-mw {
+  margin-left: 20px;
+  margin-top: 25px;
+}
+/* lef-div start */
+.left-div {
+  margin: 20px 0;
+  height: 100vh;
+  max-width: 100vw;
+  background-color: var(--ad-background);
+  border-radius: 25px;
+  box-shadow: 6px 6px 12px var(--dd-box-shadow-dark),
+    -6px -6px 12px var(--dd-box-shadow-light);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.profile-image {
+  height: 150px;
+  width: 150px;
+  object-position: 0 0;
+  border-radius: 50%;
+  object-fit: fit;
+  text-align: center;
+  padding-left: 0.7rem;
+  padding-right: 0.7rem;
+  margin-top: 50px;
+}
+.link-name {
+  text-decoration: none;
+  color: var(--dd-text);
+  font-size: 2rem;
+  margin-top: 20px;
+}
+.link-name::first-letter {
+  color: var(--dd-link);
+}
+.link-name:hover {
+  color: var(--dd-text);
+}
+.profession {
+  font-size: 2rem;
+  margin-top: 10px;
+  color: var(--dd-link);
+}
+.menu-links {
+  width: 100%;
+  padding: 0 10px;
+  padding-bottom: 60px;
+}
+.links {
+  margin-top: 15px;
+  background-color: transparent;
+}
+.links a {
+  background-color: transparent !important;
+  color: var(--dd-text);
+  border-style: none;
+  margin-bottom: 15px;
+  border-radius: 25px !important;
+  box-shadow: 6px 6px 12px var(--dd-box-shadow-dark),
+    -6px -6px 12px var(--dd-box-shadow-light);
+  text-transform: capitalize;
+  font-size: 1.1rem;
+  text-align: center;
+}
+.links a:hover {
+  color: var(--dd-link);
+}
+/* .links a:visited {
+  color: var(--dd-text);
+} */
+/* end of left div  */
+
+/* start of right div */
+.right-div {
+  margin: 20px 0;
+  background-color: var(--ad-background);
+  border-radius: 25px;
+  box-shadow: 6px 6px 12px var(--dd-box-shadow-dark),
+    -6px -6px 12px var(--dd-box-shadow-light);
+  /* height: 100vh; */
+  max-width: 100vw;
+  display: flex;
+  flex-direction: column;
+}
+.header {
+  position: relative;
+  margin-bottom: 40px;
+}
+.bouncing-letters {
+  padding-top: 20px;
+}
+.bounce {
+  animation-name: bounce;
+}
+.bouncing-letters span {
+  animation-timing-function: linear;
+  animation-duration: 1s;
+  animation-iteration-count: 1;
+  display: inline-block;
+  font-weight: bold;
+  font-size: 3.8rem;
+}
+.first-letter {
+  color: var(--dd-link);
+}
+.letter:hover {
+  color: var(--dd-link);
+}
+
+.header::before {
+  content: "<h1>";
+  font-family: "Dancing Script", cursive;
+  color: var(--dd-tag);
+  font-size: 1.6rem;
+  position: absolute;
+  margin-top: -25px;
+  margin-left: -15px;
+  left: 0;
+  opacity: 0.8;
+}
+.header::after {
+  content: "</h1>";
+  font-family: "Dancing Script", cursive;
+  color: var(--dd-tag);
+  font-size: 1.6rem;
+  position: absolute;
+  left: 0;
+  margin-top: -10px;
+  margin-left: -15px;
+  opacity: 0.8;
+}
+.main-header p span {
+  font-size: 1.8rem;
+  text-transform: capitalize;
+  font-family: Libre Baskerville, serif;
+  font-weight: 700;
+  position: relative;
+  margin-left: 20px;
+  color: var(--dd-link);
+  text-shadow: 2px -3px 4px rgba(124, 125, 154, 0.63);
+}
+.header-content,
+.about-me-btn {
+  margin-left: 20px;
+}
+.about-me {
+  margin-bottom: 20px;
+}
+.about-me a {
+  text-decoration: none;
+}
+.about-me-btn {
+  padding: 10px 20px !important;
+  color: var(--dd-link) !important;
+  border-color: var(--dd-link) !important;
+  transition: box-shadow 1.2s ease-in-out, transform 1.2s ease-in-out,
+    background-color 1.2s ease-in-out, color 1.2s ease-in-out;
+}
+.about-me-btn:hover,
+.about-me-btn:focus,
+.about-me-btn:hover span,
+.about-me-btn:hover span {
+  box-shadow: inset -3.5em 0 0 0 var(--dd-link),
+    inset 3.5em 0 0 0 var(--dd-link);
+  color: var(--dd-background) !important;
+  background-color: var(--dd-link) !important;
+}
+
+.arrow-down {
+  color: var(--dd-link);
+  padding-left: 5px;
+}
+/* end of header part */
+/* start of  skills part*/
+.skill-letters span {
+  font-size: 2.3rem !important;
+  letter-spacing: 0.1em;
+  color: var(--dd-link);
+}
+.skills {
+  position: relative;
+}
+.skills::before {
+  content: "<h2>";
+  font-family: "Dancing Script", cursive;
+  color: var(--dd-tag);
+  font-size: 1.6rem;
+  position: absolute;
+  margin-top: -25px;
+  margin-left: -15px;
+  left: 0;
+  opacity: 0.8;
+}
+.skills::after {
+  content: "</h2>";
+  font-family: "Dancing Script", cursive;
+  color: var(--dd-tag);
+  font-size: 1.6rem;
+  position: absolute;
+  margin-left: -15px;
+  opacity: 0.8;
+}
+.professional-skills {
+  padding-top: 30px;
+  display: flex !important;
+  flex-wrap: wrap !important;
+  gap: 20px 20px;
+}
+.skill-icon {
+  display: inline-block;
+  background-color: var(--dd-browser-color);
+  border-radius: 50%;
+  margin: 1rem;
+  padding: 0.5rem;
+  text-align: center;
+  transition: all 0.5s;
+  position: relative;
+}
+.skill-icon svg {
+  width: 2em;
+  height: 2em;
+}
+/* pop-up text */
+.skill-icon span {
+  color: var(--dd-text);
+  position: absolute;
+  font-family: sans-serif;
+  bottom: 0;
+  left: -20px;
+  right: -25px;
+  padding: 5px 5px;
+  z-index: -1;
+  max-width: 80px;
+  font-size: 14px;
+  font-weight: 400;
+  border-radius: 5px;
+  background: var(--dd-box-shadow-light);
+  visibility: hidden;
+  transition: all 0.3s ease-in-out;
+}
+/* pop-up text arrow */
+
+.skill-icon span:before {
+  content: "";
+  width: 0;
+  height: 0;
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  border-top: 5px solid var(--dd-box-shadow-light);
+  position: absolute;
+  bottom: -5px;
+  left: 38px;
+}
+.skill-icon:hover span {
+  bottom: 50px;
+  visibility: visible;
+  z-index: 1;
+}
+/* end of right div */
+
+/* bounce animation for header */
+@keyframes bounce {
+  20%,
+  50%,
+  80%,
+  to {
+    transform: scale(1, 1);
+  }
+  40% {
+    transform: scale(1.75, 0.65);
+  }
+  45% {
+    transform: scale(1.75, 0.65);
+  }
+  70% {
+    transform: scale(1.25, 0.75);
+  }
+  90% {
+    transform: scale(1.15, 0.85);
+  }
+}
+
+/* responsive */
+@media screen and (max-width: 1100px) {
+  .bouncing-letters span {
+    font-size: 3.8rem;
+  }
+}
