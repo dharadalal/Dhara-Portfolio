@@ -1,0 +1,13 @@
+@import url("/style.css");
+.about-me-header {
+  color: var(--dd-link);
+}
+.goal-header span {
+  font-size: 1.2em !important;
+  color: var(--dd-link);
+}
+.goal-content,
+.journey-content {
+  margin-top: 50px;
+  margin-bottom: 20px !important;
+}
