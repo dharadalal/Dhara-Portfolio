@@ -21,7 +21,7 @@ const navbarContainer = document.querySelector(".navbar-container");
 const navContent = document.querySelector(".nav-content");
 const menubarIcon = document.querySelector(".menu-icon>i");
 const navbarBackdrop = document.querySelector(".navbar-backdrop");
-
+isMenuOpen = false;
 // Drawer open
 menuIcon.addEventListener("click", () => {
   if (
@@ -33,8 +33,10 @@ menuIcon.addEventListener("click", () => {
     navContent.classList.add("show");
     menubarIcon.classList.remove("fa-bars");
     menubarIcon.classList.add("fa-close");
+    isMenuOpen = true;
   } else {
     closeDrawer();
+    isMenuOpen = false;
   }
 });
 

@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Contact Me</title>
+    <title>About Me</title>
     <link rel="stylesheet" href="/style.css" />
     <link rel="stylesheet" href="/Contact-me.css" />
     <link
@@ -57,7 +57,9 @@
                     alt=""
                     srcset=""
                   />
-                  <span class="profile-name">Dhara Dalal</span>
+                  <a class="profile-name" href="/index.html"
+                    ><span>Dhara Dalal</span></a
+                  >
 
                   <button class="menu-icon">
                     <i class="fa-solid fa-bars"></i>
@@ -72,24 +74,24 @@
                 <div class="navbar-links w-100">
                   <div id="list-example" class="list-group links">
                     <a
-                      href="/About-me.html"
+                      href="./About-me.html"
                       class="list-group-item list-group-item-action single-item"
                       >journey from QA to Developer</a
                     >
                     <a
                       class="list-group-item list-group-item-action single-item"
-                      href="#list-item-2"
+                      href="./Projects.html"
                       >My Projects</a
                     >
 
                     <a
                       class="list-group-item list-group-item-action single-item"
-                      href="/Contact-me.html"
+                      href="./Contact-me.html"
                       >Connect with Me!</a
                     >
                     <a
                       class="list-group-item list-group-item-action single-item"
-                      href="#list-item-4"
+                      href="./MyResume.html"
                       >My resume</a
                     >
                   </div>
@@ -97,6 +99,7 @@
               </div>
             </div>
             <!-- end of responsive menu -->
+
             <!-- left div -->
             <div class="col-lg-4">
               <div class="left-div">
@@ -148,7 +151,7 @@
                     >
                     <a
                       class="list-group-item list-group-item-action single-item"
-                      href="#list-item-4"
+                      href="/MyResume.html"
                       >My resume</a
                     >
                   </div>
@@ -158,108 +161,48 @@
             </div>
             <!-- right div -->
             <div class="col-lg-8">
-              <div class="right-div">
+              <div class="right-div d-lg-flex flex-lg-wrap">
                 <div class="row mx-0">
-                  <!-- <div class="col-lg-11"> -->
-                  <div class="main-header">
-                    <div class="header margin-mw">
-                      <strong>
-                        <h1 class="bouncing-letters contact-me-header">
-                          <span class="letter first-letter">C</span
-                          ><span class="letter">o</span
-                          ><span class="letter">n</span
-                          ><span class="letter">n</span
-                          ><span class="letter">e</span
-                          ><span class="letter">t</span>
-                          <span class="letter">W</span
-                          ><span class="letter">i</span
-                          ><span class="letter">t</span
-                          ><span class="letter">h</span>
-                          <span class="letter"> M</span
-                          ><span class="letter">e</span
-                          ><span class="letter">!</span>
-                        </h1>
-                      </strong>
-                    </div>
-                  </div>
-                  <div class="contact-container">
-                    <div class="contact-header">
-                      <p>
-                        I’m interested in opportunities that needs web presence
-                        or starting one online and want to build a great web
-                        experience for your customers?
-                      </p>
-                      <p class="conversation">Let's start converstation?</p>
-                    </div>
-                  </div>
-                  <div class="contact-form">
-                    <form class="row g-3">
-                      <div class="d-flex bd-highlight">
-                        <div class="d-flex flex-column w-100 flex-lg-fill">
-                          <label
-                            for="inputname"
-                            class="form-label input__label--hoshi"
-                            >Name <span class="important">*</span></label
-                          >
-                          <input
-                            type="text"
-                            class="form-control form-input input--filled input-width"
-                            placeholder="First name"
-                            aria-label="First name"
-                            required
-                          />
-                        </div>
-                        <div class="d-flex flex-column flex-lg-fill w-100">
-                          <label for="inputEmail" class="form-label"
-                            >Email <span class="important">*</span></label
-                          >
-                          <input
-                            type="email"
-                            class="form-control form-input input-width"
-                            id="inputEmail4"
-                            placeholder="Email"
-                            aria-label="Email"
-                            required
-                          />
-                        </div>
+                  <div class="col-lg-11">
+                    <div class="main-header">
+                      <div class="header margin-mw">
+                        <strong>
+                          <h1 class="bouncing-letters about-me-header">
+                            <span class="letter first-letter">C</span
+                            ><span class="letter">o</span
+                            ><span class="letter">n</span
+                            ><span class="letter">n</span
+                            ><span class="letter">e</span
+                            ><span class="letter">c</span
+                            ><span class="letter">t</span>
+                            <span class="letter"> w</span
+                            ><span class="letter">i</span
+                            ><span class="letter">t</span
+                            ><span class="letter">h</span>
+                            <span class="letter"> M</span
+                            ><span class="letter">e</span>
+                          </h1>
+                        </strong>
                       </div>
-                      <label for="inputsubject" class="form-label"
-                        >Subject <span class="important">*</span></label
-                      >
-                      <input
-                        type="text"
-                        class="form-control form-input"
-                        placeholder="Subject"
-                        aria-label="Subject"
-                        required
-                      />
 
-                      <label for="floatingTextarea2" class="form-label"
-                        >Message <span class="important">*</span></label
-                      >
-                      <textarea
-                        class="form-control form-input"
-                        type="text"
-                        placeholder="Leave a message here"
-                        id="floatingTextarea2"
-                        cols="40"
-                        rows="6"
-                        required
-                      ></textarea>
-                    </form>
-                    <div class="send-message">
-                      <a href="/About-me.html"
-                        ><button
-                          type="button"
-                          class="btn btn-outline-secondary send-message-btn"
-                        >
-                          Send message!
-                        </button>
-                      </a>
+                      <div class="contact-header">
+                        <p>
+                          I'm interested in opportunity that needs web presence
+                          or starting one online and want to build a great web
+                          experience for your customers?
+                        </p>
+                        <p class="conversation">To start a coversation</p>
+                      </div>
+
+                      <div class="email-content goal-content">
+                        <p>
+                          Email me at <strong>dharadalal08@gmail.com</strong>
+                        </p>
+                      </div>
                     </div>
+
+                    <div class="col-lg-1"></div>
                   </div>
-                  <!-- </div> -->
-                  <div class="col-lg-1"></div>
                 </div>
               </div>
             </div>

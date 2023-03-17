@@ -3,14 +3,33 @@
 .contact-container {
   padding-top: 30px;
 }
+.contact-header {
+  padding-top: 20px;
+}
 .contact-header p {
   font-size: 1.5rem;
 }
 .conversation {
+  padding-top: 20px;
   color: var(--dd-link);
   text-align: center;
 }
-.form-control {
+.email-content {
+  padding-top: 20px;
+}
+.email-content p {
+  font-size: 1.2rem;
+  text-align: center;
+}
+.email-content strong {
+  color: var(--dd-link);
+}
+@media (max-width: 991px) {
+  .right-div {
+    height: 70vh;
+  }
+}
+/* .form-control {
   width: 90% !important;
 }
 .form-label {
@@ -77,4 +96,4 @@ textarea {
     inset 3.5em 0 0 0 var(--dd-link);
   color: var(--dd-background) !important;
   background-color: var(--dd-link) !important;
-}
+} */
