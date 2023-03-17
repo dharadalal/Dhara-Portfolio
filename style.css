@@ -43,16 +43,11 @@ main {
 .responsive-navbar {
   background-color: var(--dd-background);
   box-shadow: 6px 6px 12px var(--dd-box-shadow-dark),
-    -6px 20px 12px var(--dd-box-shadow-light);
+    -6px 12px 12px var(--dd-box-shadow-light);
 }
 .navbar {
   justify-content: center !important;
 }
-/* .repsonsive-navbar-content {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-} */
 .mobile-profile-image {
   width: 80px;
   height: 80px;
@@ -76,11 +71,24 @@ main {
   color: var(--dd-text);
   border: none;
 }
-..menu-icon
-
-/* /@media (max-width: 991px) */
+.close-icon {
+  background-color: transparent;
+  font-size: 2em;
+  color: var(--dd-text);
+  border: none;
+}
+.responsive-navbar {
+  visibility: hidden;
+}
+.navbar-container.hide {
+  display: none;
+}
+.nav-content.hide {
+  visibility: hidden;
+}
 
 /* lef-div start */
+
 .left-div {
   margin: 5vh 0;
   height: 90vh;
@@ -96,6 +104,7 @@ main {
   padding-left: 0.7rem;
   padding-right: 0.7rem;
   margin-top: 50px;
+  text-align: center;
 }
 .profile-image {
   height: 150px;
@@ -529,8 +538,61 @@ a.rounded.gradient:before {
     transform: scale(1.15, 0.85);
   }
 }
+.navbar-backdrop {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  inset: 0px;
+  justify-content: center;
+  align-items: center;
+}
 
 /* responsive */
 
-@media (max-width: 991.98px) {
+@media (max-width: 991px) {
+  body {
+    overflow-y: hidden;
+  }
+  .right-div {
+    width: 100% !important;
+    margin: 20vh 0;
+  }
+  .left-div {
+    display: none;
+  }
+  .responsive-navbar {
+    visibility: visible;
+  }
+  .navbar-content {
+    position: fixed;
+    z-index: 1;
+  }
+  .navbar-container.show {
+    display: block;
+  }
+  .nav-content.show {
+    visibility: visible;
+  }
+  .navbar-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+  }
+  .nav-content {
+    margin: 15vh 0;
+    background-color: var(--dd-background);
+    border-radius: 25px;
+    box-shadow: 6px 6px 12px var(--dd-box-shadow-dark),
+      -6px -6px 12px var(--dd-box-shadow-light);
+    padding: 0 20px;
+    z-index: 1;
+    position: fixed;
+    transition: visibility 0.8s ease-in-out;
+  }
 }
