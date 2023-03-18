@@ -491,7 +491,7 @@ a.rounded.gradient:before {
 /* end of right div */
 
 /* Resume section */
-.card {
+.resume-card {
   background-color: var(--ad-background);
   box-shadow: 6px 6px 12px var(--dd-box-shadow-dark),
     -6px -6px 12px var(--dd-box-shadow-light);

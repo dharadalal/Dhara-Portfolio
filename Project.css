@@ -1,0 +1,10 @@
+@import url(/style.css);
+
+.Project-header {
+  margin-top: 0.9rem;
+}
+.Project-header p {
+  font-size: 1.3rem;
+  color: var(--dd-text);
+  text-align: center;
+}
