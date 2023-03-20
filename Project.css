@@ -8,3 +8,29 @@
   color: var(--dd-text);
   text-align: center;
 }
+.container {
+  margin: 20px 0 !important;
+}
+.card {
+  border-radius: 25px;
+  border: transparent !important;
+  box-shadow: 6px 6px 12px var(--dd-box-shadow-dark),
+    -6px 12px 12px var(--dd-box-shadow-light);
+  transition: transform 0.5s ease-in-out;
+}
+.card-body {
+  background-color: var(--dd-card-background) !important ;
+}
+
+.card-text {
+  color: var(--dd-link);
+  text-align: center;
+  font-size: 1.6rem;
+}
+
+.read-more {
+  margin: auto;
+}
+.read-more-btn {
+  margin-bottom: 20px;
+}

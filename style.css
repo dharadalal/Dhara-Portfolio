@@ -337,17 +337,15 @@ a.rounded.gradient:before {
 .about-me a {
   text-decoration: none;
 }
-.about-me-btn {
+.all-in-btn {
   padding: 10px 20px !important;
   color: var(--dd-link) !important;
   border-color: var(--dd-link) !important;
   transition: box-shadow 1.2s ease-in-out, transform 1.2s ease-in-out,
     background-color 1.2s ease-in-out, color 1.2s ease-in-out;
 }
-.about-me-btn:hover,
-.about-me-btn:focus,
-.about-me-btn:hover span,
-.about-me-btn:hover span {
+.all-in-btn:hover,
+.all-in-btn:focus {
   box-shadow: inset -3.5em 0 0 0 var(--dd-link),
     inset 3.5em 0 0 0 var(--dd-link);
   color: var(--dd-background) !important;
