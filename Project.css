@@ -34,3 +34,25 @@
 .read-more-btn {
   margin-bottom: 20px;
 }
+.modal-body,
+.modal-header {
+  background-color: var(--dd-card-background);
+}
+.modal-title {
+  font-size: 1.5rem;
+}
+.modal-title,
+.modal-project-content > p {
+  color: var(--dd-link);
+  text-align: center;
+}
+.btn-close {
+  background-color: white !important;
+}
+.image-container img {
+  max-width: 100%;
+  max-height: 80%;
+}
+.modal-content {
+  box-shadow: 0 0 5px 5px var(--dd-box-shadow-light);
+}
